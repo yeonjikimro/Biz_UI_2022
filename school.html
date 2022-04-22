@@ -19,8 +19,8 @@
         }
         h1 {
             text-align: center;
-            background-color: rgb(61, 61, 211);
-            width: 1200px;
+            background-color: #30366e;
+            width: 100%;
             display: inline-block;
             padding: 1.2em;
         }
@@ -28,24 +28,97 @@
         nav ul li { 
             list-style: none;
             width : 100px;
-            height: 100px;
+            height: 50px;
+            text-align: center;
         }
+        .nav1 {
+            float: left;
+            text-align: center;
+        }
+        header nav {
+            height: 50px;
+            line-height: 50px;
+            display: flex;
+            justify-content: right;
+            background-color: #3e4580;
+            color: white;
+            
+        }
+
+        header nav ul li:hover {
+            box-shadow: inset 100px 0 0 #ccc;
+            cursor: pointer;
+        }
+        table {
+            margin: 200px 0 0 0;
+            width: 1200px;
+            text-align: center;
+            border-collapse: collapse;
+            height: 100px;
+
+        }
+        table tr th {
+            background-color: #ccc;
+        }
+        button {
+            border: 1px solid blue;
+            background-color: blue;
+            color: white;
+            margin-left: 100;
+        }
+
+
+
+
     </style>
     <title>학사관리</title>
 </head>
 <body>
-<header>
-    <h1>고교학사관리</h1>
-    <nav>
+    <header>
+        <h1>고교학사관리</h1>
+        <nav>
         <ul>
-            <li>HOME</li>
-            <li>공지사항</li>
-            <li>자유게시판</li>
-            <li>로그인</li>
-            <li>회원가입</li>
+            <li class="nav1">공지사항</li>
+            <li class="nav1">자유게시판</li>
+            <li class="nav1">학사안내</li>
+            <li class="nav1">입학안내</li>
+            <li class="nav1">문의사항</li>
         </ul>
-    </nav>
-</header>
+
+
+            <ul>
+                <li>로그인</li>
+                <li>회원가입</li>
+            </ul>
+        </nav>
+    </header>
+
+        <table border="1">
+            <tr><th>학번</th>
+                <th>이름</th>
+                <th>전공</th>
+                <th>학년</th>
+                <th>주소</th>
+                <th>전화번호</th>
+            </tr>
+            <tr><td>20160101</td>
+                <td>홍길동</td>
+                <td>컴퓨터공학</td>
+                <td>2</td>
+                <td>서울시 동대문구</td>
+                <td>02-222-1234</td>
+            </tr>
+            <tr><td>20160102</td>
+                <td>성춘향</td>
+                <td>전자공학</td>
+                <td>3</td>
+                <td>전라남도 나주시</td>
+                <td>061-393-1754</td>
+            </tr>
+            
+        </table>
+        <input type="button" value="학생 정보 추가">
+
     
 </body>
 </html>
