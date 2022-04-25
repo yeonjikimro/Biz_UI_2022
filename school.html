@@ -14,9 +14,15 @@
             position: fixed;
             left: 0;
             top: 0;
-            width: 100%
+            width: 100%;
+            position: relative;
+            
 
         }
+        section {
+		display: flex;
+		flex-direction: column;
+	    }
         h1 {
             text-align: center;
             background-color: #30366e;
@@ -31,9 +37,10 @@
             height: 50px;
             text-align: center;
         }
-        .nav1 {
+        nav ul li {
+            display: inline-block;
             float: left;
-            text-align: center;
+
         }
         header nav {
             height: 50px;
@@ -50,8 +57,8 @@
             cursor: pointer;
         }
         table {
-            margin: 200px 0 0 0;
-            width: 1200px;
+            width: 80%;
+            margin: 50px auto;
             text-align: center;
             border-collapse: collapse;
             height: 100px;
@@ -66,6 +73,11 @@
             color: white;
             margin-left: 100;
         }
+        .table1 {
+            float: right;
+            
+            margin: 0 100px;
+        }
 
 
 
@@ -78,47 +90,39 @@
         <h1>고교학사관리</h1>
         <nav>
         <ul>
-            <li class="nav1">공지사항</li>
-            <li class="nav1">자유게시판</li>
-            <li class="nav1">학사안내</li>
-            <li class="nav1">입학안내</li>
-            <li class="nav1">문의사항</li>
+            <li>HOME</li>
+            <li>학생정보</li>
+            <li>성적알람표</li>
+            <li>로그인</li>
         </ul>
 
-
-            <ul>
-                <li>로그인</li>
-                <li>회원가입</li>
-            </ul>
         </nav>
     </header>
-
+    <section>
         <table border="1">
             <tr><th>학번</th>
-                <th>이름</th>
+                <td>20160101</td>    
                 <th>전공</th>
-                <th>학년</th>
-                <th>주소</th>
-                <th>전화번호</th>
+                <td>컴퓨터공학</td>                
+
+
             </tr>
-            <tr><td>20160101</td>
+            <tr><th>이름</th>
                 <td>홍길동</td>
-                <td>컴퓨터공학</td>
+                <th>학년</th>
                 <td>2</td>
-                <td>서울시 동대문구</td>
-                <td>02-222-1234</td>
+
             </tr>
-            <tr><td>20160102</td>
-                <td>성춘향</td>
-                <td>전자공학</td>
-                <td>3</td>
-                <td>전라남도 나주시</td>
-                <td>061-393-1754</td>
+            <tr>
+                <th>주소</th>
+                <td colspan="3">서울시 동대문구</td>
             </tr>
+
             
         </table>
-        <input type="button" value="학생 정보 추가">
-
+    </section>
+        <input class="table1" type="button" value="학생 정보 추가">
+        
     
 </body>
 </html>
